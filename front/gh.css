@@ -1,0 +1,81 @@
+body {
+    background-image: url("clean_top_crop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    padding: 12px;
+    column-gap: 180px;
+}
+
+h1 {
+    font-size: 33px;
+    color: white;
+    padding-left: 40px;
+}
+nav {
+    font-size: 20px;
+    margin-top: 28px;
+    padding-left: 30px;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    padding: 10px;
+}
+
+.get {
+  margin: 20px;
+  background-color: rgb(13, 152, 244);
+  width: 16%;
+  height: 40%;
+  padding: 9px;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-size: 10px bold;
+}
+
+main {
+    
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+}
+
+.ho {
+    font-size: 26px;
+    font-style: italic;
+    color: darkblue;
+}
+
+.hp {
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    color: white;
+}
+
+.hv {
+    font-size: 40px;
+    font-weight: bolder;
+    color: darkblue;
+    text-shadow: 10px;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+}
+
+.o {
+    color: darkblue;
+}

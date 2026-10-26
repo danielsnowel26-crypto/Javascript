@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Global University - About Us. Knowledge, Innovation &amp; Excellence.">
+        <!-- FIXED: <title> was "Document" on every page; each page now has its own title -->
+        <title>About Us | Global University</title>
+        <!-- ADDED: icon library, fonts and the favicon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E">
+        <link rel="stylesheet" href="uni.css">
+    </head>
+    <body>
+        <!-- ADDED (real-website feel): preloader, scroll-progress bar, announcement bar, cookie notice, footer newsletter -->
+        <div id="loader"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div id="progress"></div>
+        <div class="strip">
+            <div class="box"><span><i class="fa-solid fa-bullhorn"></i> Spring registration is open - <a href="admission.html">apply today</a></span><span><a href="portal.html"><i class="fa-solid fa-lock"></i> Student Portal</a><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></span></div>
+        </div>
+        <!-- FIXED: header was <header><ul><h1>..</h1></ul>; <ul> may only contain <li>, and <p> was closed inside <h1>. Rebuilt as a proper brand + nav. -->
+        <header class="head">
+            <div class="box">
+                <a class="logo" href="index.html" title="Main hub">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h1>Global University<span class="ups">Knowledge, Innovation &amp; Excellence</span></h1>
+                </a>
+                <button class="burger" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+                <nav aria-label="Main">
+                    <!-- FIXED: typo "Alumins" -> "Alumni"; "Focus &amp; Events" -> "News &amp; Events"; empty href="" links now point to real pages; last empty link got a search icon -->
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="admission.html">Admissions</a>
+                    <a href="academics.html">Academics</a>
+                    <a href="campus.html">Campus Life</a>
+                    <a href="news.html">News &amp; Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="alumni.html">Alumni</a>
+                    <a href="library.html">Library</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="library.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </nav>
+            </div>
+        </header>
+        <!-- FIXED: only ONE <main> is allowed per page (you had two: .don and .icons) -->
+        <main>
+            <section class="cover">
+                <!-- IMAGE SLOT: images/about-banner.jpg (1600x500) - About Us banner -->
+                <span class="slot fill lbl" data-file="images/about-banner.jpg" data-size="1600x500">
+                    <img src="images/about-banner.jpg" alt="About Us banner">
+                </span>
+                <div class="box">
+                    <div class="trail"><a href="index.html">Home</a> / About</div>
+                    <h2>About Us</h2>
+                    <p>Our History, Mission and Vision</p>
+                </div>
+            </section>
+
+            <section class="">
+                <div class="box">
+                    <h2 class="title"><i class="fa-solid fa-clock-rotate-left"></i>Our History</h2>
+                    <div class="years rise">
+                        <div><b>2001</b>Founded as a small college</div>
+                        <div><b>2005</b>First batch of graduates</div>
+                        <div><b>2010</b>Expanded facilities &amp; programmes</div>
+                        <div><b>2015</b>Achieved national recognition</div>
+                        <div><b>2020</b>Global partnerships and growth</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="">
+                <div class="box">
+                    <div class="trio">
+                        <div class="car rise">
+                            <span class="mon"><i class="fa-solid fa-bullseye"></i></span>
+                            <h3>Mission</h3>
+                            <p>To provide quality education, foster innovation and develop responsible global citizens.</p>
+                        </div>
+                        <div class="car rise">
+                            <span class="mon"><i class="fa-solid fa-eye"></i></span>
+                            <h3>Vision</h3>
+                            <p>To be a leading international university recognised for excellence and innovation.</p>
+                        </div>
+                        <div class="car rise">
+                            <span class="mon"><i class="fa-solid fa-gem"></i></span>
+                            <h3>Our Values</h3>
+                            <p>Integrity, Excellence, Inclusion, Innovation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="">
+                <div class="box">
+                    <h2 class="title"><i class="fa-solid fa-people-group"></i>Leadership &amp; Administration</h2>
+                    <div class="quad">
+                        <div class="car leader rise">
+                            <div class="face">
+                                <!-- IMAGE SLOT: images/about-leader-1.jpg (300x300) - Prof. A. Okafor -->
+                                <span class="slot fill" data-file="images/about-leader-1.jpg" data-size="300x300">
+                                    <img src="images/about-leader-1.jpg" alt="Prof. A. Okafor">
+                                </span>
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <b>Prof. A. Okafor</b>
+                            <br>
+                            <small>Chancellor</small>
+                        </div>
+                        <div class="car leader rise">
+                            <div class="face">
+                                <!-- IMAGE SLOT: images/about-leader-2.jpg (300x300) - Prof. L. Daniels -->
+                                <span class="slot fill" data-file="images/about-leader-2.jpg" data-size="300x300">
+                                    <img src="images/about-leader-2.jpg" alt="Prof. L. Daniels">
+                                </span>
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <b>Prof. L. Daniels</b>
+                            <br>
+                            <small>Vice Chair</small>
+                        </div>
+                        <div class="car leader rise">
+                            <div class="face">
+                                <!-- IMAGE SLOT: images/about-leader-3.jpg (300x300) - Dr. M. Bello -->
+                                <span class="slot fill" data-file="images/about-leader-3.jpg" data-size="300x300">
+                                    <img src="images/about-leader-3.jpg" alt="Dr. M. Bello">
+                                </span>
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <b>Dr. M. Bello</b>
+                            <br>
+                            <small>Board Member</small>
+                        </div>
+                        <div class="car leader rise">
+                            <div class="face">
+                                <!-- IMAGE SLOT: images/about-leader-4.jpg (300x300) - Dr. A. Williams -->
+                                <span class="slot fill" data-file="images/about-leader-4.jpg" data-size="300x300">
+                                    <img src="images/about-leader-4.jpg" alt="Dr. A. Williams">
+                                </span>
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <b>Dr. A. Williams</b>
+                            <br>
+                            <small>Chairman</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="">
+                <div class="box">
+                    <h2 class="title"><i class="fa-solid fa-ranking-star"></i>Rankings &amp; Accreditations</h2>
+                    <div class="quad">
+                        <div class="car rise">
+                            <span class="mon"><i class="fa-solid fa-trophy"></i></span>
+                            <h3>Top 10</h3>
+                            <p>National Universities (2026)</p>
+                        </div>
+                        <div class="car rise">
+                            <span class="mon"><i class="fa-solid fa-certificate"></i></span>
+                            <h3>Accredited by</h3>
+                            <p>Nigerian NUC</p>
+                        </div>
+                        <div class="car rise">
+                            <span class="mon"><i class="fa-solid fa-earth-africa"></i></span>
+                            <h3>World University Rankings</h3>
+                            <p>Global ranking</p>
+                        </div>
+                        <div class="car rise">
+                            <span class="mon"><i class="fa-solid fa-shield-halved"></i></span>
+                            <h3>ISO 9001:2015</h3>
+                            <p>Certified</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="base">
+            <div class="box">
+                <div class="set">
+                    <div>
+                        <h4><i class="fa-solid fa-graduation-cap"></i> Global University</h4>
+                        <p>Building tomorrow's leaders through knowledge, innovation and excellence.</p>
+                        <p class="follow" style="margin-top:12px">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Explore</h4>
+                        <a href="about.html">About</a>
+                        <a href="admission.html">Admissions</a>
+                        <a href="academics.html">Academics</a>
+                        <a href="campus.html">Campus Life</a>
+                    </div>
+                    <div>
+                        <h4>Departments</h4>
+                        <a href="departments.html">Departments</a>
+                        <a href="faculty.html">Faculty</a>
+                        <a href="library.html">Library</a>
+                        <a href="alumni.html">Alumni</a>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <a href="contact.html"><i class="fa-solid fa-location-dot"></i> Ibadan, Nigeria</a>
+                        <a href="mailto:info@globaluniversity.edu"><i class="fa-solid fa-envelope"></i> info@globaluniversity.edu</a>
+                        <a href="tel:+2340000000"><i class="fa-solid fa-phone"></i> +234 000 000 000</a>
+                    </div>
+                </div>
+                <form class="letter" data-form="Subscribed! Watch your inbox for campus news." novalidate>
+                    <div class="entry">
+                        <input type="email" placeholder="Subscribe to campus news - your email" aria-label="Email for newsletter" required>
+                        <div class="warn"></div>
+                    </div>
+                    <button class="press sun small"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+                    <div class="sent" role="status"></div>
+                </form>
+                <p class="legal">
+                    &copy; 2026 Global University. All rights reserved.
+                    <a href="index.html" style="display:inline">Main hub</a>
+                    &bull;
+                    <a href="portal.html" style="display:inline">Student Portal</a>
+                    &bull;
+                    <a href="home.html" style="display:inline">Campus Home</a>
+                </p>
+            </div>
+        </footer>
+        <div id="cookie" role="dialog" aria-label="Cookie notice">
+            <span><i class="fa-solid fa-cookie-bite"></i> We use cookies to improve your experience.</span>
+            <button class="press sun small" id="agree">Accept</button>
+        </div>
+        <button id="up" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+        <script src="uni.js"></script>
+    </body>
+</html>

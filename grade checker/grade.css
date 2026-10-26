@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background: wheat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px whitesmoke;
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  margin: 20px 0;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.input-section {
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  transition: border-color 0.5s;
+  border-radius: 10px;
+  border: 2px solid lightblue;
+  padding: 12px 15px;
+  font-size: 18px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: orange;
+}
+
+button {
+  background-color: blue;
+  margin-top: 12px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: skyblue;
+}
+
+.Subject-Inputs {
+  margin-top: 20px;
+}
+
+.subject-row {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.subject-row input {
+  display: flex 1;
+}
+
+.report {
+  display: none;
+  padding-top: 20px;
+  border-top: 3px white;
+  margin-top: 30px;
+}
+
+.report h2 {
+  text-align: center;
+  color: skyblue;
+  margin-bottom: 20px;
+}
+
+.report-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.grade-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.grade-box {
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: skyblue;
+  color: rgb(31, 90, 167);
+  margin: 0 5px;
+}
+
+.grade-A {
+  background-color: green;
+}
+
+.grade-B {
+  background-color: lightgreen;
+}
+
+.grade-C {
+  background-color: yellow;
+}
+
+.grade-D {
+  background-color: rgb(121, 14, 14);
+}
+
+.grade-f {
+  background-color: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  padding: 14px;
+  border-bottom: 2px solid white;
+  text-align: left;
+}
+
+th {
+  background-color: white;
+  font-weight: 620;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.actions button {
+  flex: 1;
+}
+
+#resetBtn {
+  background-color: red;
+}
+
+#resetBtn:hover {
+  background-color: #c0392b;
+}
+
+#newstudentBtn {
+  background-color: green;
+}
+
+#newstudentBtn:hover {
+  background-color: greenyellow;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 6px;
+  display: none;
+}

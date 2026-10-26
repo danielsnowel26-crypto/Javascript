@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-left: 20px;
+  color: black;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+.nav-bar {
+  display: flex;
+  align-content: space-between;
+  column-gap: 300px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.one {
+  height: 150px;
+  width: 380px;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 15px;
+  box-sizing: content-box;
+}
+
+.two {
+  margin-top: -150px;
+  margin-left: 400px;
+  height: 150px;
+  width: 380px;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 15px;
+  box-sizing: content-box;
+}
+
+.three {
+  margin-top: -150px;
+  margin-left: 800px;
+  height: 150px;
+  width: 380px;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 15px;
+  box-sizing: content-box;
+}
+
+.four {
+  height: 150px;
+  width: 380px;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 15px;
+  box-sizing: content-box;
+}
+
+.five {
+  margin-left: 400px;
+  margin-top: -150px;
+  height: 150px;
+  width: 380px;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 15px;
+  box-sizing: content-box;
+}
+
+.six {
+  margin-left: 800px;
+  margin-top: -150px;
+  height: 150px;
+  width: 380px;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 15px;
+  box-sizing: content-box;
+}

@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.subject-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.subject-row input {
+  flex: 1;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+
+/* Report Styles */
+.report-header {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.report-table th, .report-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.summary-boxes {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grade-box {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+.grade-box.avg {
+  background-color: #3498db;
+}
+
+.grade-box.final {
+  background-color: #2ecc71;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+#newStudentBtn {
+  background-color: #2ecc71;
+}
+
+#newStudentBtn:hover {
+  background-color: #27ae60;
+}
+
+#resetBtn {
+  background-color: #e74c3c;
+}
+
+#resetBtn:hover {
+  background-color: #c0392b;
+}

@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: darkblue;
+  padding: 0.4px;
+  color: white;
+}
+
+nav {
+  font-size: 18px;
+  margin: center;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.input-group {
+  width: 100%;
+  height: 250px;
+  background-color: lightblue;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-left: 20px;
+}
+
+p {
+  margin-left: 20px;
+  font-size: 16px;
+}
+.getStartedbtn {
+  width: 12%;
+  padding: 6px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px bold;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: background-color 0.3s;
+}
+
+.explorecoursesbtn {
+  width: 12%;
+  padding: 6px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 14px bold;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+.All {
+  width: 190px;
+  height: 140px;
+  margin-left: 20px;
+  background-color: lightblue;
+  color: black;
+  text-align: center;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+}
+.student-two {
+  margin-top: -110px;
+  margin-left: 215px;
+  width: 190px;
+  height: 140px;
+  background-color: rgb(203, 43, 203);
+  color: black;
+  text-align: center;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+}
+
+.student-three {
+  margin-top: -140px;
+  margin-left: 425px;
+  width: 190px;
+  height: 140px;
+  background-color: lightgreen;
+  color: black;
+  text-align: center;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+}
+
+.student-four {
+  margin-top: -140px;
+  margin-left: 625px;
+  width: 190px;
+  height: 140px;
+  background-color: pink;
+  color: black;
+  text-align: center;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+}
+
+.student-five {
+  margin-top: -140px;
+  margin-left: 825px;
+  width: 190px;
+  height: 140px;
+  background-color: rgb(235, 233, 229);
+  color: black;
+  text-align: center;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+}
+
+.student-six {
+  margin-top: -140px;
+  margin-left: 1025px;
+  width: 190px;
+  height: 140px;
+  background-color: rgb(232, 222, 203);
+  color: black;
+  text-align: center;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+}
+
+.why-left {
+  height: 300px;
+  width: 100%;
+  background-color: lightblue;
+}
+
+.why-desp {
+  margin-left: 20px;
+}
+
+.stat {
+  justify-content: space-between;
+  margin-left: 20px;
+}

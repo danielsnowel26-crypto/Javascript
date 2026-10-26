@@ -1,0 +1,19 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    color: blue;
+    margin: 0;
+    padding: 18px;
+}
+
+li {
+    background-color: whitesmoke;
+    color: blue;
+    padding: 18px;
+
+}

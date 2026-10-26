@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Global University - Student Portal. Knowledge, Innovation &amp; Excellence.">
+        <!-- FIXED: <title> was "Document" on every page; each page now has its own title -->
+        <title>Student Portal | Global University</title>
+        <!-- ADDED: icon library, fonts and the favicon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E">
+        <link rel="stylesheet" href="uni.css">
+    </head>
+    <body>
+        <!-- ADDED (real-website feel): preloader, scroll-progress bar, announcement bar, cookie notice, footer newsletter -->
+        <div id="loader"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div id="progress"></div>
+        <div class="strip">
+            <div class="box"><span><i class="fa-solid fa-bullhorn"></i> Spring registration is open - <a href="admission.html">apply today</a></span><span><a href="portal.html"><i class="fa-solid fa-lock"></i> Student Portal</a><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></span></div>
+        </div>
+        <!-- FIXED: header was <header><ul><h1>..</h1></ul>; <ul> may only contain <li>, and <p> was closed inside <h1>. Rebuilt as a proper brand + nav. -->
+        <header class="head">
+            <div class="box">
+                <a class="logo" href="index.html" title="Main hub">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h1>Global University<span class="ups">Knowledge, Innovation &amp; Excellence</span></h1>
+                </a>
+                <button class="burger" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+                <nav aria-label="Main">
+                    <!-- FIXED: typo "Alumins" -> "Alumni"; "Focus &amp; Events" -> "News &amp; Events"; empty href="" links now point to real pages; last empty link got a search icon -->
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="admission.html">Admissions</a>
+                    <a href="academics.html">Academics</a>
+                    <a href="campus.html">Campus Life</a>
+                    <a href="news.html">News &amp; Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="alumni.html">Alumni</a>
+                    <a href="library.html">Library</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="library.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </nav>
+            </div>
+        </header>
+        <!-- FIXED: only ONE <main> is allowed per page (you had two: .don and .icons) -->
+        <main>
+            <section class="cover">
+                <!-- IMAGE SLOT: images/portal-banner.jpg (1600x500) - Student Portal banner -->
+                <span class="slot fill lbl" data-file="images/portal-banner.jpg" data-size="1600x500">
+                    <img src="images/portal-banner.jpg" alt="Student Portal banner">
+                </span>
+                <div class="box">
+                    <div class="trail"><a href="index.html">Home</a> / Student Portal</div>
+                    <h2>Student Portal</h2>
+                    <p>Sign in to see your timetable, results and fees.</p>
+                </div>
+            </section>
+
+            <section class="">
+                <div class="box">
+                    <div class="duo">
+                        <form class="car rise" id="login" novalidate>
+                            <h3 class="title"><i class="fa-solid fa-lock"></i>Sign in</h3>
+                            <div class="entry">
+                                <label for="sid">Student ID</label>
+                                <input id="sid" placeholder="e.g. GU2026001" required>
+                                <div class="warn"></div>
+                            </div>
+                            <div class="entry">
+                                <label for="pw">Password</label>
+                                <input id="pw" type="password" required>
+                                <div class="warn"></div>
+                            </div>
+                            <button class="press sea"><i class="fa-solid fa-right-to-bracket"></i> Sign in</button>
+                            <br>
+                            <small>Demo only: any ID and password opens the dashboard.</small>
+                        </form>
+                        <div class="car rise">
+                            <h3 class="title"><i class="fa-solid fa-circle-info"></i>Need help?</h3>
+                            <ul class="rows">
+                                <li><i class="fa-solid fa-key"></i>Forgot password? Contact IT support</li>
+                                <li><i class="fa-solid fa-headset"></i>support@globaluniversity.edu</li>
+                                <li><i class="fa-solid fa-clock"></i>Support hours: Mon-Fri 8am-6pm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dash" hidden>
+                <div class="box">
+                    <h2 class="title"><i class="fa-solid fa-gauge"></i>Welcome back, <span id="who">Student</span></h2>
+                    <div class="trio">
+                        <div class="car rise">
+                            <span class="mon"><i class="fa-solid fa-calendar-week"></i></span>
+                            <h3>Today</h3>
+                            <p>09:00 Data Structures - 11:00 Calculus II - 14:00 Library study room</p>
+                        </div>
+                        <div class="car rise">
+                            <span class="mon"><i class="fa-solid fa-chart-column"></i></span>
+                            <h3>Current GPA</h3>
+                            <p>4.2 / 5.0</p>
+                        </div>
+                        <div class="car rise">
+                            <span class="mon"><i class="fa-solid fa-wallet"></i></span>
+                            <h3>Fees</h3>
+                            <p>Paid in full for this semester.</p>
+                        </div>
+                    </div>
+                    <p style="margin-top:14px">
+                        <button class="press sea" id="logout"><i class="fa-solid fa-right-from-bracket"></i> Sign out</button>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="base">
+            <div class="box">
+                <div class="set">
+                    <div>
+                        <h4><i class="fa-solid fa-graduation-cap"></i> Global University</h4>
+                        <p>Building tomorrow's leaders through knowledge, innovation and excellence.</p>
+                        <p class="follow" style="margin-top:12px">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Explore</h4>
+                        <a href="about.html">About</a>
+                        <a href="admission.html">Admissions</a>
+                        <a href="academics.html">Academics</a>
+                        <a href="campus.html">Campus Life</a>
+                    </div>
+                    <div>
+                        <h4>Departments</h4>
+                        <a href="departments.html">Departments</a>
+                        <a href="faculty.html">Faculty</a>
+                        <a href="library.html">Library</a>
+                        <a href="alumni.html">Alumni</a>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <a href="contact.html"><i class="fa-solid fa-location-dot"></i> Ibadan, Nigeria</a>
+                        <a href="mailto:info@globaluniversity.edu"><i class="fa-solid fa-envelope"></i> info@globaluniversity.edu</a>
+                        <a href="tel:+2340000000"><i class="fa-solid fa-phone"></i> +234 000 000 000</a>
+                    </div>
+                </div>
+                <form class="letter" data-form="Subscribed! Watch your inbox for campus news." novalidate>
+                    <div class="entry">
+                        <input type="email" placeholder="Subscribe to campus news - your email" aria-label="Email for newsletter" required>
+                        <div class="warn"></div>
+                    </div>
+                    <button class="press sun small"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+                    <div class="sent" role="status"></div>
+                </form>
+                <p class="legal">
+                    &copy; 2026 Global University. All rights reserved.
+                    <a href="index.html" style="display:inline">Main hub</a>
+                    &bull;
+                    <a href="portal.html" style="display:inline">Student Portal</a>
+                    &bull;
+                    <a href="home.html" style="display:inline">Campus Home</a>
+                </p>
+            </div>
+        </footer>
+        <div id="cookie" role="dialog" aria-label="Cookie notice">
+            <span><i class="fa-solid fa-cookie-bite"></i> We use cookies to improve your experience.</span>
+            <button class="press sun small" id="agree">Accept</button>
+        </div>
+        <button id="up" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+        <script src="uni.js"></script>
+    </body>
+</html>

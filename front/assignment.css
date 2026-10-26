@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  box-sizing: content-box;
+  background-color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs {
+  background-color: whitesmoke;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px black;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+select,
+input {
+  width: 96%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.registerbtn {
+  width: 100%;
+  padding: 12px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+
+.wlc {
+  margin-top: 10%;
+  height: 100%;
+  text-align: center;
+  font-size: 20px;
+  box-sizing: border-box;
+  color: darkblue;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contbtn {
+  width: 50%;
+  padding: 12px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="uni.css">
+</head>
+
+    <header class="head">
+        <ul>
+           <h1>Global University<br>
+            <p class="ups">Knowledge, Innovation & Excellence</p></h1>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="admission.html">Admissions</a>
+                <a href="academics.html">Academics</a>
+                <a href="campus.html">Campus Life</a>
+                <a href="news.html">Focus & Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="">Alumins</a>
+                <a href="">Library</a>
+                <a href="">Contact</a>
+                <a href="">🔎</a>
+            </nav>
+            </ul>
+
+<body class="gallery">
+    <header class="main-six">
+        <h3 class="ava">
+            Gallery
+        </h3>
+        <p class="ler">Moments That Inspire</p>
+    </header>
+    <button class="photo">Photo Gallery</button>
+    <button class="case">Video ShowCase</button>
+
+    <div>
+        <button class="time">All</button>
+        <button class="btn">Campus</button>
+        <button class="btn">Events</button>
+        <button class="btn">Graduation</button>
+    </div>
+
+    <div class="aura">
+        <div class="solo">
+        <img src="1790507052146.jpg" alt="">
+        <h3 class="src">Campus Grounds</h3>
+
+        <img src="1790507069297.jpg" alt="">
+        <h3 class="src">Student Life</h3>
+
+        <img src="1790507088529.jpg" alt="">
+        <h3 class="src">Graduation</h3>
+
+        </div>
+
+        <div class="solo">
+        <img src="1790507084917.jpg" alt="">
+        <h3 class="src">Library</h3>
+
+        <img src="1791102810264.jpg" alt="">
+        <h3 class="src">Research</h3>
+
+        <img src="1791102815963.jpg" alt="">
+        <h3 class="src">Annual Sports Day</h3>
+
+        </div>
+
+        <div class="solo">
+        <img src="1790793284696.jpg" alt="">
+        <h3 class="src">Our Housing</h3>
+
+        <img src="1790793295792.jpg" alt="">
+        <h3 class="src">Hostel</h3>
+
+        <img src="1791103047710.jpg" alt="">
+        <h3 class="src">Our Faculty</h3>
+        </div>
+    </div>
+</body>
+</html>
+
+.aura img:nth-of-type(3n+1),
+.src:nth-of-type(3n+1) {grid-column: 1; }
+
+.aura img:nth-of-type(3n+2),
+.src:nth-of-type(3n+2) {grid-column: 2; }
+
+.aura img:nth-of-type(3n),
+.src:nth-of-type(3n) {grid-column: 3; }
+
+.aura img:nth-of-type(-n+3) {grid-row: 1; }
+.src:nth-of-type(-n+3) {grid-column: 2; }
+
+.aura img:nth-of-type(n+4):nth-of-type(-n+6) {grid-row: 3; }
+.src:nth-of-type(n+4):nth-of-type(-n+6) {grid-column: 4; }
+
+.aura img:nth-of-type(n+7):nth-of-type(-n+9) {grid-row: 5; }
+.src:nth-of-type(n+7):nth-of-type(-n+9) {grid-column: 6; }
+
+@media (max-width: 500px) {
+    .aura {grid-template-columns: 1fr; }
+    .aura img {height: 190px; }
+}

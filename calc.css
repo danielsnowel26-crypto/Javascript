@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: blue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cal {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-sizing: 0 10px rgba(0, 0, 0.25);
+    width: 330px;
+    padding: 20px;
+}
+
+.dis {
+    background-color: black;
+    border-radius: 13px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    text-align: right;
+    overflow: hidden;
+}
+
+.abc {
+    color: white;
+    font-size: 15px;
+    font-weight: 660;
+    min-height: 18px;
+}
+
+.def {
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    padding: 18px 0;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.numbtn {
+    background-color: black;
+    color: white;
+}
+
+.numbtn:hover {
+    background-color: yellow;
+}
+
+.zerobtn {
+    grid-column: span 2;
+}

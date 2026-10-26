@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Global University - Welcome. Knowledge, Innovation &amp; Excellence.">
+        <!-- FIXED: <title> was "Document" on every page; each page now has its own title -->
+        <title>Welcome | Global University</title>
+        <!-- ADDED: icon library, fonts and the favicon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E">
+        <link rel="stylesheet" href="uni.css">
+    </head>
+    <body>
+        <!-- ADDED (real-website feel): preloader, scroll-progress bar, announcement bar, cookie notice, footer newsletter -->
+        <div id="loader"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div id="progress"></div>
+        <div class="strip">
+            <div class="box"><span><i class="fa-solid fa-bullhorn"></i> Spring registration is open - <a href="admission.html">apply today</a></span><span><a href="portal.html"><i class="fa-solid fa-lock"></i> Student Portal</a><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></span></div>
+        </div>
+        <!-- FIXED: header was <header><ul><h1>..</h1></ul>; <ul> may only contain <li>, and <p> was closed inside <h1>. Rebuilt as a proper brand + nav. -->
+        <header class="head">
+            <div class="box">
+                <a class="logo" href="index.html" title="Main hub">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h1>Global University<span class="ups">Knowledge, Innovation &amp; Excellence</span></h1>
+                </a>
+                <button class="burger" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+                <nav aria-label="Main">
+                    <!-- FIXED: typo "Alumins" -> "Alumni"; "Focus &amp; Events" -> "News &amp; Events"; empty href="" links now point to real pages; last empty link got a search icon -->
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="admission.html">Admissions</a>
+                    <a href="academics.html">Academics</a>
+                    <a href="campus.html">Campus Life</a>
+                    <a href="news.html">News &amp; Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="alumni.html">Alumni</a>
+                    <a href="library.html">Library</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="library.html" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </nav>
+            </div>
+        </header>
+        <!-- FIXED: only ONE <main> is allowed per page (you had two: .don and .icons) -->
+        <main>
+            <section class="cover large">
+                <!-- IMAGE SLOT: images/index-banner.jpg (1600x500) - Welcome banner -->
+                <span class="slot fill lbl" data-file="images/index-banner.jpg" data-size="1600x500">
+                    <img src="images/index-banner.jpg" alt="Welcome banner">
+                </span>
+                <div class="box">
+                    <div class="trail"><i class="fa-solid fa-earth-africa"></i> Global University &bull; Est. 2001</div>
+                    <h1>Learn. Discover. <span class="swap" data-words="Connect.|Lead.|Belong.|Grow.">Grow.</span></h1>
+                    <p>One website for everything at Global University: apply, study, explore campus and stay connected for life.</p>
+                    <a class="press sun beat" href="admission.html"><i class="fa-solid fa-rocket"></i> Apply now</a>
+                    <a class="press ghost" href="#explore"><i class="fa-solid fa-compass"></i> Explore the site</a>
+                </div>
+            </section>
+
+            <section class="lift">
+                <div class="box">
+                    <div class="quad">
+                        <div class="car fact rise"><b data-count="25000" data-suffix="+">0</b><i class="fa-solid fa-user-graduate"></i> Students</div>
+                        <div class="car fact rise"><b data-count="1200" data-suffix="+">0</b><i class="fa-solid fa-chalkboard-user"></i> Educators</div>
+                        <div class="car fact rise"><b data-count="85">0</b><i class="fa-solid fa-book-open"></i> Programmes</div>
+                        <div class="car fact rise"><b data-count="60" data-suffix="+">0</b><i class="fa-solid fa-handshake"></i> Partner universities</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="explore">
+                <div class="box">
+                    <h2 class="title"><i class="fa-solid fa-compass"></i>Explore the website</h2>
+                    <p style="margin-bottom:14px;max-width:640px">Thirteen pages, one click away. Pick who you are and we will show the pages built for you.</p>
+                    <div class="picks quick">
+                        <button class="pick on" data-a="all">All pages</button>
+                        <button class="pick" data-a="future">Future students</button>
+                        <button class="pick" data-a="current">Current students</button>
+                        <button class="pick" data-a="community">Community</button>
+                        <button class="pick" data-a="alumni">Alumni</button>
+                    </div>
+                    <div class="menu">
+                        <a class="door rise" href="admission.html" data-a="future">
+                            <span class="mon"><i class="fa-solid fa-user-plus"></i></span>
+                            <h3>Admissions</h3>
+                            <p>Apply online, check fees and track your application.</p>
+                            <span class="jump">Open page <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="door rise" href="academics.html" data-a="future">
+                            <span class="mon"><i class="fa-solid fa-book-open-reader"></i></span>
+                            <h3>Academics</h3>
+                            <p>Faculties, programmes, research centres and the calendar.</p>
+                            <span class="jump">Open page <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="door rise" href="campus.html" data-a="future">
+                            <span class="mon"><i class="fa-solid fa-people-group"></i></span>
+                            <h3>Campus Life</h3>
+                            <p>Clubs, housing, sport, dining and wellness.</p>
+                            <span class="jump">Open page <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="door rise" href="about.html" data-a="future">
+                            <span class="mon"><i class="fa-solid fa-landmark"></i></span>
+                            <h3>About Us</h3>
+                            <p>Our history, leadership, rankings and values.</p>
+                            <span class="jump">Open page <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="door rise" href="departments.html" data-a="current">
+                            <span class="mon"><i class="fa-solid fa-sitemap"></i></span>
+                            <h3>Departments</h3>
+                            <p>Eight departments with contacts and overviews.</p>
+                            <span class="jump">Open page <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="door rise" href="faculty.html" data-a="current">
+                            <span class="mon"><i class="fa-solid fa-chalkboard-user"></i></span>
+                            <h3>Faculty</h3>
+                            <p>Search our educators and read their profiles.</p>
+                            <span class="jump">Open page <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="door rise" href="library.html" data-a="current">
+                            <span class="mon"><i class="fa-solid fa-book-bookmark"></i></span>
+                            <h3>Library</h3>
+                            <p>Databases, e-books, study rooms and opening hours.</p>
+                            <span class="jump">Open page <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="door rise" href="gallery.html" data-a="current">
+                            <span class="mon"><i class="fa-solid fa-images"></i></span>
+                            <h3>Gallery</h3>
+                            <p>Photos and videos from campus and ceremonies.</p>
+                            <span class="jump">Open page <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="door rise" href="news.html" data-a="community">
+                            <span class="mon"><i class="fa-solid fa-newspaper"></i></span>
+                            <h3>News &amp; Events</h3>
+                            <p>Announcements, stories and the events calendar.</p>
+                            <span class="jump">Open page <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="door rise" href="alumni.html" data-a="alumni">
+                            <span class="mon"><i class="fa-solid fa-award"></i></span>
+                            <h3>Alumni</h3>
+                            <p>Join the association, meet graduates and give back.</p>
+                            <span class="jump">Open page <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="door rise" href="contact.html" data-a="community">
+                            <span class="mon"><i class="fa-solid fa-headset"></i></span>
+                            <h3>Contact Us</h3>
+                            <p>Send an enquiry and find the right office.</p>
+                            <span class="jump">Open page <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="door rise" href="portal.html" data-a="current">
+                            <span class="mon"><i class="fa-solid fa-laptop"></i></span>
+                            <h3>Student Portal</h3>
+                            <p>Sign in for your timetable, results and fees.</p>
+                            <span class="jump">Open page <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        <a class="door rise" href="home.html" data-a="community">
+                            <span class="mon"><i class="fa-solid fa-house"></i></span>
+                            <h3>Campus Home</h3>
+                            <p>The classic university homepage and quick links.</p>
+                            <span class="jump">Open page <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="">
+                <div class="box">
+                    <h2 class="title"><i class="fa-solid fa-images"></i>A look inside campus</h2>
+                    <div class="trio">
+                        <!-- IMAGE SLOT: images/index-campus-1.jpg (640x420) - Main campus -->
+                        <span class="slot photo lbl" data-file="images/index-campus-1.jpg" data-size="640x420">
+                            <img src="images/index-campus-1.jpg" alt="Main campus">
+                        </span>
+                        <!-- IMAGE SLOT: images/index-campus-2.jpg (640x420) - Lecture hall -->
+                        <span class="slot photo lbl" data-file="images/index-campus-2.jpg" data-size="640x420">
+                            <img src="images/index-campus-2.jpg" alt="Lecture hall">
+                        </span>
+                        <!-- IMAGE SLOT: images/index-campus-3.jpg (640x420) - Student life -->
+                        <span class="slot photo lbl" data-file="images/index-campus-3.jpg" data-size="640x420">
+                            <img src="images/index-campus-3.jpg" alt="Student life">
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="">
+                <div class="box">
+                    <h2 class="title"><i class="fa-solid fa-route"></i>Your journey with us</h2>
+                    <div class="trip">
+                        <a class="leg rise" href="academics.html"><span class="mon"><i class="fa-solid fa-compass"></i></span><b>Discover</b><small>Browse programmes and campus life.</small></a>
+                        <a class="leg rise" href="admission.html"><span class="mon"><i class="fa-solid fa-pen-to-square"></i></span><b>Apply</b><small>Submit documents and pay online.</small></a>
+                        <a class="leg rise" href="departments.html"><span class="mon"><i class="fa-solid fa-book-open"></i></span><b>Study</b><small>Departments, faculty and the library.</small></a>
+                        <a class="leg rise" href="gallery.html"><span class="mon"><i class="fa-solid fa-user-graduate"></i></span><b>Graduate</b><small>Celebrate with the class of 2026.</small></a>
+                        <a class="leg rise" href="alumni.html"><span class="mon"><i class="fa-solid fa-hand-holding-heart"></i></span><b>Give back</b><small>Join alumni and support others.</small></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="">
+                <div class="box">
+                    <div class="duo">
+                        <div class="car rise">
+                            <h3 class="title"><i class="fa-solid fa-bullhorn"></i>Latest news</h3>
+                            <div class="item">
+                                <div class="day"><small>Apr</small><span>25</span></div>
+                                <a href="news.html">University wins National Research Award</a>
+                            </div>
+                            <div class="item">
+                                <div class="day"><small>Apr</small><span>23</span></div>
+                                <a href="news.html">Spring Semester Registration Now Open</a>
+                            </div>
+                            <div class="item">
+                                <div class="day"><small>Apr</small><span>10</span></div>
+                                <a href="news.html">Annual Career Fair 2026</a>
+                            </div>
+                        </div>
+                        <div class="car rise">
+                            <h3 class="title"><i class="fa-solid fa-calendar-check"></i>Coming up</h3>
+                            <div class="plan">
+                                <div class="day"><small>MAY</small><span>05</span></div>
+                                <div><b>Research Seminar</b><br><small><i class="fa-regular fa-clock"></i> 10:00 AM - 12:00 PM</small></div>
+                            </div>
+                            <div class="plan">
+                                <div class="day"><small>MAY</small><span>12</span></div>
+                                <div><b>Career Fair</b><br><small><i class="fa-regular fa-clock"></i> 9:00 AM - 4:00 PM</small></div>
+                            </div>
+                            <div class="plan">
+                                <div class="day"><small>MAY</small><span>20</span></div>
+                                <div><b>Graduation Ceremony</b><br><small><i class="fa-regular fa-clock"></i> 10:00 AM - 1:00 PM</small></div>
+                            </div>
+                            <p style="margin-top:10px"><a href="news.html">See the full calendar <i class="fa-solid fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="box">
+                    <div class="call rise">
+                        <div>
+                            <h2>Ready to start your story?</h2>
+                            <p>Applications for the next intake are open. It takes about 15 minutes.</p>
+                        </div>
+                        <a class="press sun beat" href="admission.html"><i class="fa-solid fa-pen-to-square"></i> Start your application</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="base">
+            <div class="box">
+                <div class="set">
+                    <div>
+                        <h4><i class="fa-solid fa-graduation-cap"></i> Global University</h4>
+                        <p>Building tomorrow's leaders through knowledge, innovation and excellence.</p>
+                        <p class="follow" style="margin-top:12px">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Explore</h4>
+                        <a href="about.html">About</a>
+                        <a href="admission.html">Admissions</a>
+                        <a href="academics.html">Academics</a>
+                        <a href="campus.html">Campus Life</a>
+                    </div>
+                    <div>
+                        <h4>Departments</h4>
+                        <a href="departments.html">Departments</a>
+                        <a href="faculty.html">Faculty</a>
+                        <a href="library.html">Library</a>
+                        <a href="alumni.html">Alumni</a>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <a href="contact.html"><i class="fa-solid fa-location-dot"></i> Ibadan, Nigeria</a>
+                        <a href="mailto:info@globaluniversity.edu"><i class="fa-solid fa-envelope"></i> info@globaluniversity.edu</a>
+                        <a href="tel:+2340000000"><i class="fa-solid fa-phone"></i> +234 000 000 000</a>
+                    </div>
+                </div>
+                <form class="letter" data-form="Subscribed! Watch your inbox for campus news." novalidate>
+                    <div class="entry">
+                        <input type="email" placeholder="Subscribe to campus news - your email" aria-label="Email for newsletter" required>
+                        <div class="warn"></div>
+                    </div>
+                    <button class="press sun small"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+                    <div class="sent" role="status"></div>
+                </form>
+                <p class="legal">
+                    &copy; 2026 Global University. All rights reserved.
+                    <a href="index.html" style="display:inline">Main hub</a>
+                    &bull;
+                    <a href="portal.html" style="display:inline">Student Portal</a>
+                    &bull;
+                    <a href="home.html" style="display:inline">Campus Home</a>
+                </p>
+            </div>
+        </footer>
+        <div id="cookie" role="dialog" aria-label="Cookie notice">
+            <span><i class="fa-solid fa-cookie-bite"></i> We use cookies to improve your experience.</span>
+            <button class="press sun small" id="agree">Accept</button>
+        </div>
+        <button id="up" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+        <script src="uni.js"></script>
+    </body>
+</html>
